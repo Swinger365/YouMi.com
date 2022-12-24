@@ -677,6 +677,10 @@ body{
   min-height: 600px;
 }
 
+.min-h-\[400px\] {
+  min-height: 400px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -726,6 +730,10 @@ body{
 }
 
 .w-\[25\%\] {
+  width: 25%;
+}
+
+.w-1\/4 {
   width: 25%;
 }
 
@@ -785,6 +793,10 @@ body{
   gap: 0.75rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -818,8 +830,56 @@ body{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\.\.\/resources\/ellipse\.svg\] {
+  background-color: ../resources/ellipse.svg;
+}
+
+.bg-\[\.\.\/resources\/imgs\/ellipse\.svg\] {
+  background-color: ../resources/imgs/ellipse.svg;
+}
+
 .bg-\[url\(\'\.\.\/resources\/imgs\/bubble\.svg\'\)\] {
   background-image: url('../resources/imgs/bubble.svg');
+}
+
+.bg-\[url\(\.\.\/resources\/imgs\/ellipse\.svg\)\] {
+  background-image: url(../resources/imgs/ellipse.svg);
+}
+
+.bg-\[url\(\.\.\/resources\/imgs\.arrow\.swg\)\] {
+  background-image: url(../resources/imgs.arrow.swg);
+}
+
+.bg-\[url\(\.\.\/resources\/imgs\.arrow\.svg\)\] {
+  background-image: url(../resources/imgs.arrow.svg);
+}
+
+.bg-\[url\(\.\.\/resources\/imgs\/underline\.svg\)\] {
+  background-image: url(../resources/imgs/underline.svg);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-clip-padding {
+  background-clip: padding-box;
+}
+
+.bg-clip-content {
+  background-clip: content-box;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-no-repeat {
