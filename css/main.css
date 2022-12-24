@@ -609,6 +609,10 @@ body{
   left: 70%;
 }
 
+.-right-14 {
+  right: -3.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -667,6 +671,14 @@ body{
 
 .mb-auto {
   margin-bottom: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-32 {
+  margin-left: 8rem;
 }
 
 .flex {
@@ -1119,6 +1131,10 @@ body{
     left: 80%;
   }
 
+  .sm\:right-\[20px\] {
+    right: 20px;
+  }
+
   .sm\:mt-8 {
     margin-top: 2rem;
   }
@@ -1227,6 +1243,10 @@ body{
     margin-right: 1.25rem;
   }
 
+  .md\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1245,6 +1265,14 @@ body{
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-1\/6 {
+    width: 16.666667%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:gap-4 {
