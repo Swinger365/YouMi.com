@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YouMi.com</title>
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <header class="flex flex-wrap w-full bg-main-darker relative min-h-[128px] items-start">
+            <nav class="w-full flex">
+                <a href="../pages/main.html" class="mt-8 ml-4 md:ml-4 lg:ml-8">
+                    <img class="w-[150px] h-[44.03px]" 
+                    src="../resources/imgs/logo.svg" alt="Упс(" />
+                </a>
+                <div class="hidden mt-8 flex ml-auto md:flex md:gap-4 md:mr-0 md:text-4
+                 lg:gap-12 lg:mr-8 lg:flex  lg:text-lg">
+                    <button id="aboutUs">О нас</button>
+                    <button>Тарифы</button>
+                    <button>Психологам</button>
+                    <button>Материалы</button>
+                    <button class="border-2 border-violet rounded-3xl p-4
+                    transition-colors delay-75 text-violet
+                    hover:bg-violet hover:text-white 
+                    active:bg-indigo-800 active:border-indigo-800
+                    ">Личный кабинет</button>
+                </div>
+                <button class="md:hidden mt-10 ml-auto mr-8">
+                    <img src="../resources/imgs/menu.svg" alt="Бургер" />
+                </button>
+            </nav>
+        </header>
+        <section class="w-full flex flex-wrap items-start min-h-[592px] bg-main-darker">
+            <article class="flex flex-wrap justify-center ml-8 w-full lg:justify-start lg:w-2/3">
+                <h1 class="text-violet font-extrabold text-md md:text-xl lg:text-3xl w-2/3 mt-8 lg:mt-16">
+                    Вместе мы справимся!
+                </h1>
+                <h1 class="font-extrabold text-md md:text-xl lg:text-3xl w-2/3 md:mt-4 lg:mt-8">
+                    Найдите своего
+                    <br />
+                    психолога онлайн
+                    <br />
+                    <button class="flex w-full justify-center items-center
+                    drop-shadow-[10px_10px_0px_rgba(205,225,255,1)]
+                    text-sm md:text-md lg:text-xl bg-violet text-white rounded-3xl p-2 lg:p-4 md:mt-6 lg:mt-10
+                    hover:bg-indigo-800 transition-colors delay-75
+                    active:bg-indigo-900">
+                    Найти психолга
+                    </button>
+                    <span class="flex justify-center text-sm md:text-md lg:text-xl mt-4 font-semi-bold">
+                        2770 рублей за 50 минут сессии
+                    </span>
+                </h1>
+            </article>
+            <div class="w-full lg:w-1/4 flex items-start justify-center lg:justify-start">
+                <img src="../resources/imgs/blobs.svg" class="hidden md:block absolute left-0 lg:left-[45%]" alt="Упс(" />
+                <img src="../resources/imgs/illustration.svg" class="w-[55%] lg:w-[100%]" alt="Упс(" />
+                <button class="absolute bottom-[-20%] md:bottom-[-30%] lg:bottom-[-15%] right-8
+                md:right-16 lg:right-16">
+                    <img src="../resources/imgs/support-chat.svg" id="chat" class="w-[80px] h-[80px]
+                    " alt="Упс(" />
+                </button>
+            </div>
+        </section>
+        <section class="w-full flex items-start justify-between flex-wrap min-h-[300px] p-16">
+            <div class="w-full flex text-violet text-md md:text-xl lg:text-3xl justify-center">
+                Онлайн-психотерапия становится комфортнее
+            </div>
+            <div class="w-full flex items-start gap-5 justify-between flex-wrap p-8 lg:p-32 mt-32">
+                <div class="flex flex-wrap relative justify-center text-center
+                bg-bluelike-light w-full lg:w-1/4 rounded-3xl p-4">
+                <img src="../resources/imgs/planet.svg" alt="упс(" class="absolute w-32 h-32 top-[-60px]"/>
+                    <span class="w-full text-xl font-extrabold mt-16">
+                        Свобода возможностей
+                    </span>
+                    <span class="mt-4">
+                        Проходите сессию из любой точки мира, 
+                        не тратьте время на дорогу
+                    </span>
+                </div>
+                <div class="flex flex-wrap mt-8 lg:mt-0 relative justify-center text-center 
+                bg-bluelike-light w-full lg:w-1/4 rounded-3xl p-4">
+                <img src="../resources/imgs/check mark.svg" alt="упс(" class="absolute w-32 h-32 top-[-60px]"/>
+                    <span class="w-full text-xl font-extrabold mt-16">
+                        Будьте уверены в своем выборе
+                    </span>
+                    <span class="mt-4">
+                        Мы работаем только с квалифицированными 
+                        специалистами, которые прошли строгий отбор
+                    </span>
+                </div>
+                <div class="flex flex-wrap relative justify-center text-center
+                bg-bluelike-light mt-8 lg:mt-0 w-full lg:w-1/4 min-h-[100px] rounded-3xl p-4">
+                <img src="../resources/imgs/Darts.svg" alt="упс(" class="absolute w-32 h-32 top-[-60px]"/>
+                    <span class="w-full text-xl font-extrabold mt-16">
+                        Ваш запрос важен
+                    </span>
+                    <span class="mt-4">
+                        Подберем опытного специалиста под ваш запрос
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="flex w-full flex-wrap
+        bg-main-darker relative min-h-[450px] p-16">
+            <span class="w-full text-xl text-center mt-8">
+                Вместе мы справимся
+            </span>
+            <span class="w-full text-3xl text-violet text-center mt-10">
+                В YouMi вы не одни
+            </span>
+            <span class="w-full mt-4 text-center">
+                Профессиональные психологи помогут разобрать вопросы,
+                <br />
+                <span>
+                    которые вы не можете решить в одиночку:
+                    <img src="../resources/imgs/arrow.svg" class="relative left-[80%] top-[-5%]" alt="упс" />
+                </span>
+            </span>
+            <nav class="w-full flex flex-wrap justify-center gap-2 items-start mt-32">
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Фобии
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Самооценка
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Неврозы
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Апатия
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Стрессы
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Неуверенность в себе
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Мотивация
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Депрессивное состояние
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Безразличие
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Чувство тревоги
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Хроническая усталость
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Отношения
+                    </button>
+                <button class="border-2 border-violet rounded-3xl p-4
+                        transition-colors delay-75 text-violet
+                        hover:bg-violet hover:text-white 
+                        active:bg-indigo-800 active:border-indigo-800
+                        ">
+                        Выгорание
+                    </button>
+            </nav>
+        </section>
+        <section class="w-full flex flex-wrap bg-white p-8">
+            <span class="w-full font-bold text-xl">
+                Мы работаем только с
+            </span>
+            <span class="w-full text-violet mt-4 text-3xl font-extrabold">
+                квалифицированными специалистами,
+                <br />
+                которые прошли наш строгий отбор
+            </span>
+            <span class="w-full font-light mt-4">
+                Помимо серии собеседований и испытаний по разработанной нами
+                <br />  
+                методологии,психологи предоставляют необходимые документы:
+            </span>
+            <article class="flex w-full lg:w-2/3 bg-bluelike-light items-center flex-column gap-12 mt-8 p-5 rounded-3xl">
+                <img src="../resources/imgs/book.svg" alt="Упс(" />
+                <span class="text-xl">
+                    Образование
+                    <br />
+                    <span class="text-sm font-semibold">
+                        Диплом о высшем психологическом 
+                        <br />
+                        образовании и дополнительные
+                        <br />
+                        сертификаты
+                    </span>
+                </span>
+            </article>
+            <article class="w-full lg:w-[30%] lg:ml-4 mt-8 p-12 flex flex-wrap items-center 
+            justify-center bg-bluelike-light rounded-3xl">
+                <span class="text-xl w-full">
+                    Опыт работы
+                </span>
+                <br />
+                <span class="text-sm font-semibold w-full">
+                    Подтвержденный опыт
+                    <br /> 
+                    работы не менее 3-х лет
+                </span>
+            </article>
+            <article class="w-full lg:w-[30%] mt-8 p-12 flex flex-wrap items-center 
+            justify-center bg-bluelike-light rounded-3xl">
+                <span class="text-xl w-full">
+                    Обучение
+                </span>
+                <br />
+                <span class="text-sm font-semibold w-full mt-4">
+                    Прохождение супервизии
+                    <br /> 
+                    от 20 часов в год
+                </span>
+            </article>
+            <article class="flex w-full lg:w-[66.5%] bg-bluelike-light flex-column 
+            items-center gap-12 lg:ml-4 mt-8 p-5 rounded-3xl">
+                <img src="../resources/imgs/watch.svg" alt="Упс(" />
+                <span class="text-xl">
+                    Личная терапия
+                    <br />
+                    <span class="text-sm font-semibold">
+                        Прохождение личной
+                        <br />
+                        терапии от 50 часов в год
+                    </span>
+                </span>
+            </article>
+        </section>
+        <section class="w-full flex-wrap bg-main-darker flex items-start justify-center p-8">
+            <span class="w-full text-3xl text-violet mt-16 font-extrabold text-center">
+                Сделайте 4 шага навстречу психотерапии
+            </span>
+            <article class="w-full lg:w-1/2 min-h-[161px] ml-16 flex flex-row bg-[url('../resources/imgs/bubble.svg')] mt-16 bg-no-repeat">
+                <img src="../resources/imgs/1.svg" alt="Упс(" />
+                <span class="font-bold ml-16 mt-8">
+                    Заполните анкету,
+                    <br />
+                    <span class="font-light text-md">
+                        ответив на 5 простых вопросов,
+                        <br />
+                        определив тему и пожелания 
+                        <br />
+                        по психологу.
+                    </span>
+                </span>
+            </article>
+            <article class="w-full lg:w-[45%] flex flex-row justify-center mt-16 min-h-[161px]">
+                <img src="../resources/imgs/win1.svg" alt="Упс(" />
+            </article>
+            <article class="w-full lg:w-1/2 flex justify-center flex-row mt-16 lg:ml-16 min-h-[161px]">
+                <img src="../resources/imgs/win2.svg" alt="Упс(" />
+            </article>
+            <article class="w-full lg:w-[45%] min-h-[161px] flex flex-row bg-[url('../resources/imgs/bubble.svg')] mt-16 bg-no-repeat">
+                <img src="../resources/imgs/2.svg" alt="Упс(" />
+                <span class="font-bold ml-16 mt-8">
+                    Ознакомьтесь с профилями
+                    <br />
+                    <span class="font-light text-md">
+                        специалистов и посмотрите видео-
+                        <br />
+                        визитки.Выберите психолога
+                        <br />
+                        с которым вам будет комфортно.
+                    </span>
+                </span>
+            </article>
+            <article class="w-full lg:w-1/2 min-h-[161px] lg:ml-16 flex flex-row bg-[url('../resources/imgs/bubble.svg')] mt-16 bg-no-repeat">
+                <img src="../resources/imgs/3.svg" alt="Упс(" />
+                <span class="font-bold ml-16 mt-8">
+                    Определите дату и время
+                    <br />
+                    <span class="font-light text-md">
+                        первой сессии. Если у вас 
+                        <br />
+                        поменяются планы, вы сможете
+                        <br />
+                        ее отменить или перенести.
+                    </span>
+                </span>
+            </article>
+            <article class="w-full lg:w-[45%] flex justify-center flex-row
+            mt-16 min-h-[161px]">
+                <img src="../resources/imgs/win3.svg" alt="Упс(" />
+            </article>
+            <article class="w-full lg:w-1/2 flex justify-center 
+            flex-row mt-16 lg:ml-16 min-h-[161px]">
+                <img src="../resources/imgs/win4.svg" alt="Упс(" />
+            </article>
+            <article class="w-full lg:w-[45%] min-h-[161px] flex flex-row bg-[url('../resources/imgs/bubble.svg')] mt-16 bg-no-repeat">
+                <img src="../resources/imgs/4.svg" alt="Упс(" />
+                <span class="font-bold ml-16 mt-8">
+                    Пройдите тестирование
+                    <br />
+                    <span class="font-light text-md">
+                        в личном кабинете для того, чтобы 
+                        <br />
+                        сделать первую сессию более 
+                        <br />
+                        продуктивной.
+                    </span>
+                </span>
+            </article>
+            <article class="w-full lg:w-1/2 min-h-[161px] lg:ml-16 flex flex-row bg-[url('../resources/imgs/bubble.svg')] mt-16 bg-no-repeat items-center">
+                <img src="../resources/imgs/calendar.svg" alt="Упс(" />
+                <span class="font-light text-md ml-8">
+                    Мы напомним вам о сессии 
+                    <br />
+                    за сутки и за час до начала
+                </span>
+            </article>
+            <article class="flex w-full lg:w-[38%] min-h-[161px] lg:mr-20 items-center justify-center">
+                <button class="flex w-full mt-[110px] justify-center items-center
+                drop-shadow-[10px_10px_0px_rgba(205,225,255,1)]
+                text-sm md:text-md lg:text-xl bg-violet text-white rounded-3xl p-4
+                hover:bg-indigo-800 transition-colors delay-75
+                active:bg-indigo-900">
+                Сделать первый шаг
+                </button>
+            </article>
+        </section>
+        <section class="bg-white flex flex-wrap gap-8 p-16">
+            <span class="w-full text-3xl font-extrabold text-center text-violet">
+                Вопросы - ответы
+            </span>
+            <article class="w-full flex flex-wrap items-center bg-bluelike-light p-8 rounded-3xl">
+                <span class="w-[95%] text-xl font-extrabold">
+                    Эффективно ли работать с психологом онлайн?
+                </span>
+                <button class="w-[45px]" id="ans1">
+                    <img src="../resources/imgs/minus.svg" alt="Упс(((" />
+                </button>
+                <span class="w-full text-md font-light mt-4">
+                    Да, эффективно и уже является стандартной практикой во всем мире.
+                    <br /> 
+                    За последние годы было проведено много научных исследований,
+                    <br />
+                    доказывающих, что данный формат не уступает по эффективности
+                    <br />
+                    традиционной очной психотерапии.
+                </span>
+            </article>
+            <article class="w-full flex flex-wrap items-center bg-bluelike-light p-8 rounded-3xl">
+                <span class="w-[95%] text-xl font-extrabold">
+                    Как выбрать специалиста?
+                </span>
+                <button class="w-[5%]" id="ans2">
+                    <img src="../resources/imgs/plus.svg" alt="Упс(((" />
+                </button>
+                <span>
+                    <!-- Ответ здесь добавим -->
+                </span>
+            </article>
+            <article class="w-full flex flex-wrap items-center bg-bluelike-light p-8 rounded-3xl">
+                <span class="w-[95%] text-xl font-extrabold">
+                    Чувствую, что мне нужна помощь, но не понимаю в чём проблема. 
+                    <br />
+                    Как быть?
+                </span>
+                <button class="w-[5%]" id="ans2">
+                    <img src="../resources/imgs/plus.svg" alt="Упс(((" />
+                </button>
+                <span>
+                    <!-- Ответ здесь добавим -->
+                </span>
+            </article>
+            <article class="w-full flex flex-wrap items-center bg-bluelike-light p-8 rounded-3xl">
+                <span class="w-[95%] text-xl font-extrabold">
+                    Как вы отбираете психологов в базу?
+                </span>
+                <button class="w-[5%]" id="ans2">
+                    <img src="../resources/imgs/plus.svg" alt="Упс(((" />
+                </button>
+                <span>
+                    <!-- Ответ здесь добавим -->
+                </span>
+            </article>
+            <article class="w-full flex flex-wrap items-center bg-bluelike-light p-8 rounded-3xl">
+                <span class="w-[95%] text-xl font-extrabold">
+                    В чем разница между психологом, психотерапевтом и психиатром
+                    <br />
+                    и как понять кто мне нужен?
+                </span>
+                <button class="w-[5%]" id="ans2">
+                    <img src="../resources/imgs/plus.svg" alt="Упс(((" />
+                </button>
+                <span>
+                    <!-- Ответ здесь добавим -->
+                </span>
+            </article>
+            <article class="w-full flex flex-wrap items-center bg-bluelike-light p-8 rounded-3xl">
+                <span class="w-[95%] text-xl font-extrabold">
+                    Какое количество сессий мне необходимо, чтобы получить результат?
+                </span>
+                <button class="w-[5%]" id="ans2">
+                    <img src="../resources/imgs/plus.svg" alt="Упс(((" />
+                </button>
+                <span>
+                    <!-- Ответ здесь добавим -->
+                </span>
+            </article>
+        </section>
+        <section class="relative w-full min-h-[600px] flex justify-center flex-wrap bg-main-darker">
+            <article class="w-[60%] mt-16 ml-8 flex flex-wrap">
+                <span class="w-full text-3xl font-extrabold text-violet">
+                    YouMi заботиться о вас даже вне сессий
+                </span>
+                <span class="w-full text-md mt-4">
+                    Работая с YouMi от 4 сессий мы дарим доступ
+                    <br />
+                    к приложению с виртуальным психологом.
+                </span>
+                <span class="w-full flex flex-row gap-4 mt-8 items-center">
+                    <img src="../resources/imgs/checked.svg" alt="Упсики(((" />
+                    <span class="text-md font-light">
+                        Прорабатывайте себя с помощью
+                        <br />
+                        упражнений и аудиопрактик
+                    </span>
+                </span>
+                <span class="w-full flex flex-row gap-4 mt-8 items-center">
+                    <img src="../resources/imgs/checked.svg" alt="Упсики(((" />
+                    <span class="text-md font-light">
+                        Ведите личный дневник настроения
+                        <br />
+                        и получайте подробную статистику о себе
+                    </span>
+                </span>
+                <span class="w-full flex flex-row gap-4 mt-8 items-center">
+                    <img src="../resources/imgs/checked.svg" alt="Упсики(((" />
+                    <span class="text-md font-light">
+                        Расскажите виртуальному психологу о своих 
+                        <br />
+                        чувствах и он подберет актуальный материал
+                    </span>
+                </span>
+            </article>
+            <div class="flex flex-row justify-center relative mt-8">
+                <img src="../resources/imgs/screen2.svg" class="relative" alt="Упс(" />
+                <img src="../resources/imgs/screen1.svg" class="relative left-[-100px] top-[40px]" alt="Упс(" />
+            </div>
+            <div class="flex w-full justify-center">
+                <button class="flex w-1/2 h-[60px] mt-[100px] justify-center items-center
+                drop-shadow-[10px_10px_0px_rgba(205,225,255,1)]
+                text-sm md:text-md lg:text-xl bg-violet text-white rounded-3xl
+                hover:bg-indigo-800 transition-colors delay-75
+                active:bg-indigo-900">
+                Доступно в App Store
+                </button>
+            </div>
+        </section>
+        <section class="w-full flex justify-center bg-white p-16">
+            <article class="flex flex-wrap relative w-full bg-main-darker rounded-3xl mt-8 p-8">
+                <img src="../resources/imgs/specialist.svg" class="absolute right-[20px] top-[-60px]" alt="Упс(((">
+                <span class="w-full text-3xl text-violet font-extrabold">
+                    Экстренная помощь
+                </span>
+                <span class="w-full text-sm font-light mt-8">
+                    Если вам необходима срочная <span class="font-semibold">психологическая помощь</span>
+                    <br />
+                    и вы чувствуете, что не можете больше справиться самостоятельно,
+                    <br />
+                    обратитесь по одному из контактов ниже.
+                </span>
+                <div class="w-1/2 mt-8">
+                    <a href="tel:+7 495 989 50 50">+7 495 989 50 50</a>
+                    <br />
+                    <span class="font-light">
+                        Центр экстренной психологической
+                        <br />
+                        помощи МЧС России
+                    </span>
+                </div>
+                <div class="w-1/2 mt-8">
+                    <a href="tel:+7 499 173 09 09">+7 499 173 09 09</a>
+                    <br />
+                    <span class="font-light">
+                        Московская служба психологической
+                        <br />
+                        помощи населению
+                    </span>
+                </div>
+                <div class="w-1/2 mt-8">
+                    <a href="tel:8 800 333 44 34">8 800 333 44 34</a>
+                    <br />
+                    <span class="font-light">
+                        Бесплатная кризисная линия доверия
+                    </span>
+                </div>
+                <div class="w-1/2 mt-8">
+                    <a href="tel:8 800 700 06 00">8 800 700 06 00</a>
+                    <br />
+                    <span class="font-light">
+                        Всероссийский телефон доверия для
+                        <br />
+                        женщин, пострадавших от домашнего
+                        <br />
+                        насилия
+                    </span>
+                </div>
+                <div class="w-1/2 mt-8">
+                    <a href="tel:8 800 2000 122">8 800 2000 122</a>
+                    <br />
+                    <span class="font-light">
+                        Всероссийская служба детского
+                        <br />
+                        телефона доверия
+                    </span>
+                </div>
+            </article>
+        </section>
+        <footer class="w-full flex flex-col gap-3 lg:flex-row bg-main-darker p-16 justify-evenly items-center">
+            <div class="flex flex-wrap">
+                <a href="../pages/main.html" class="w-full flex">
+                    <img src="../resources/imgs/logo.svg" alt="Упс(" />
+                </a>
+                <div class="w-full flex flex-wrap mt-2">
+                    <a href="http://vk.com" class="w-[25%] h-[30px]">
+                        <img src="../resources/imgs/vk.svg" alt="vk" />
+                    </a>
+                    <a href="http://telegram.org" class="w-[25%] h-[30px]">
+                        <img src="../resources/imgs/telegram.svg" alt="telegram" />
+                    </a>
+                    <a href="http://dzen.ru" class="w-[25%] h-[30px]">
+                        <img src="../resources/imgs/dzen.svg" alt="dzen" />
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <span class="w-full font-light">
+                    Сотрудничество:
+                </span>
+                <br />
+                <a href="mailto:@youmiwork" class="text-violet">@youmiwork</a>
+                <br />
+                <span class="w-full font-light">
+                    Поддержка клиентов:
+                </span>
+                <br />
+                <a href="mailto:@youmi" class="text-violet">@youmi</a>
+            </div>
+            <nav class="flex flex-wrap text-violet">
+                <a href="../pages/about us.html" class="w-full">
+                    О нас
+                </a>         
+                <a href="../pages/tarrifs.html" class="w-full">
+                    Тарифы
+                </a>
+                <a href="../pages/psychologists.html" class="w-full">
+                    Психологам
+                </a>
+            </nav>
+            <nav class="flex flex-wrap text-violet">
+                <a href="../pages/blog.html" class="w-full">
+                    Блог
+                </a>         
+                <a href="../pages/QA.html" class="w-full">
+                    Вопрос - ответ
+                </a>
+                <a href="../pages/contacts.html" class="w-full">
+                    Контакты
+                </a>
+            </nav>
+            <nav class="flex flex-wrap underline text-[#4d4d52] opacity-50">
+                <a href="../pages/blog.html" class="w-full">
+                    Обработка персональных данных
+                </a>         
+                <a href="../pages/QA.html" class="w-full">
+                    Пользовательское соглашение
+                </a>
+                <a href="../pages/contacts.html" class="w-full">
+                    Юридические документы
+                </a>
+            </nav>
+        </footer>
+        <script src="../scripts/main.js"></script>
+    </body>
+</html>

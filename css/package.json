@@ -1,0 +1,13 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "watch":"npx tailwindcss -i ./input.css -o ./main.css --watch",
+    "build":"npx tailwindcss -i ./input.css -o ./main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

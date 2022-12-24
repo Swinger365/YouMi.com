@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "Monsterrat";
+        src: url(../resources/fonts/Montserrat-Regular.ttf);
+    }
+    body{
+        font-family: "Monsterrat";
+        font-weight: bolder;
+        overflow-x: hidden;
+    }
+}
