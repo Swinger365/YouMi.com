@@ -713,6 +713,10 @@ body{
   margin-left: 8rem;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
 .flex {
   display: flex;
 }
