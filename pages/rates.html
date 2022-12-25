@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YouMi.com - rates</title>
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="hidden bg-black absolute w-full z-50 bg-opacity-50 h-full" id="hiddenLog">
+            <form action="#" class="flex flex-wrap justify-center lg:left-1/4 absolute top-8 bg-white rounded-3xl p-16">
+                <input type="text" class="border-2 rounded-3xl p-4 w-full" required placeholder="имя"/>
+                <input type="password" class="border-2 rounded-3xl p-4 mt-8 w-full" required placeholder="Пароль" name="password" id="password" />
+                <input type="submit" class="mt-4 bg-violet text-white p-4 rounded-3xl" value="Войти" />
+            </form>
+        </div>
+        <header
+        class="flex flex-wrap bg-main-darker w-full relative min-h-[128px] items-start"
+      >
+        <nav class="w-full flex">
+          <a href="../pages/main.html" class="mt-8 ml-4 md:ml-4 lg:ml-8">
+            <img
+              class="w-[150px] h-[44.03px]"
+              src="../resources/imgs/logo.svg"
+              alt="Упс("
+            />
+          </a>
+          <div
+            class="hidden mt-8 flex ml-auto md:flex md:gap-4 md:mr-0 md:text-4 lg:gap-12 lg:mr-8 lg:flex lg:text-lg"
+          >
+            <button id="aboutUs">О нас</button>
+            <button id="rates">Тарифы</button>
+            <button id="psychologists">Психологам</button>
+            <button>Материалы</button>
+            <button
+              class="border-2 border-violet rounded-3xl p-4 transition-colors delay-75 text-violet hover:bg-violet hover:text-white active:bg-indigo-800 active:border-indigo-800"
+              id="personalAccount"
+              >
+              Личный кабинет
+            </button>
+          </div>
+          <button class="md:hidden mt-10 ml-auto mr-8" id="burger">
+            <img src="../resources/imgs/menu.svg" alt="Бургер" />
+          </button>
+        </nav>
+      </header>
+      <nav class="w-full hidden md:hidden flex flex-wrap bg-bluelike-light p-4 gap-2" id="hidden-menu">
+        <a href="./about us.html" class="w-full">
+            <button class="w-full border-2 rounded-3xl" id="aboutUs">О нас</button>
+        </a>
+        <a href="./rates.html" class="w-full">
+            <button class="w-full border-2 rounded-3xl" id="psychologists">Тарифы</button>
+        </a>
+        <a href="./psychologists.html" class="w-full">
+            <button class="w-full border-2 rounded-3xl" id="psychologists">Психологам</button>
+        </a>
+        <button class="w-full border-2 rounded-3xl">Материалы</button>
+        <button
+          class="border-2 w-full border-violet rounded-3xl p-1 transition-colors delay-75 text-violet hover:bg-violet hover:text-white active:bg-indigo-800 active:border-indigo-800"
+          onclick="personalAccount()"
+          >
+          Личный кабинет
+        </button>
+    </nav>
+    <section
+      class="w-full flex bg-main-darker flex-wrap items-start min-h-[592px]"
+    >
+      <article
+        class="flex flex-wrap justify-center ml-0 lg:ml-8 w-full lg:justify-start lg:w-2/3"
+      >
+        <h1
+          class="text-violet font-extrabold text-center lg:text-left text-md md:text-xl lg:text-3xl w-2/3 mt-8 lg:mt-16"
+        >
+        Выберите количество сессий, которое вы хотите оплатить. 
+        </h1>
+        <h1
+          class="font-semibold text-center lg:text-left text-sm md:text-xl lg:text-xl w-2/3 md:mt-4 lg:mt-8"
+        >
+            Оплачивая пакет от 4 сессий вы получаете доступ к приложению.
+          <button
+            class="flex w-full justify-center items-center drop-shadow-[10px_10px_0px_rgba(205,225,255,1)] 
+            text-sm md:text-md lg:text-xl bg-violet text-white rounded-3xl p-2 lg:p-4 mt-4 md:mt-6 lg:mt-10 hover:bg-indigo-800 transition-colors delay-75 active:bg-indigo-900"
+          >
+            Узнать больше
+          </button>
+        </h1>
+      </article>
+      <div
+        class="w-full lg:w-1/4 flex items-start justify-center lg:justify-start"
+      >
+        <img
+          src="../resources/imgs/illustration4.svg"
+          class="w-[55%] lg:w-[100%]"
+          alt="Упс("
+        />
+        </div>
+    </section>
+    <section class="w-full flex flex-wrap justify-center p-8 gap-4">
+        <h1
+        class="w-full flex text-violet text-xl text-center mt-8 md:text-3xl lg:text-4xl justify-center"
+        >
+            Тарифы
+        </h1>
+        <div class="flex flex-wrap w-full md:w-[40%] lg:w-[20%] bg-main-darker rounded-3xl">
+            <span class="w-full text-center bg-bluelike-light p-2 rounded-t-3xl">
+                1 сесия
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-extrabold">
+                2 900₽
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-light">
+                за сессию
+            </span>
+            <button
+            class="flex w-full justify-center items-center text-sm md:text-md lg:text-xl 
+            bg-violet text-white rounded-3xl p-1 lg:p-2 
+            mt-4 md:mt-6 lg:mt-10 hover:bg-indigo-800 
+            transition-colors delay-75 active:bg-indigo-900"
+          >
+          Оплатить 
+          2 900₽
+          </button>
+        </div>
+        <div class="flex flex-wrap w-full md:w-[40%] lg:w-[20%] bg-main-darker rounded-3xl">
+            <span class="w-full text-center bg-bluelike-light p-2 rounded-t-3xl">
+                4 сесии
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-extrabold">
+                2 800₽
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-light">
+                за сессию
+            </span>
+            <button
+            class="flex w-full justify-center items-center text-sm md:text-md lg:text-xl 
+            bg-violet text-white rounded-3xl p-1 lg:p-2 
+            mt-4 md:mt-6 lg:mt-10 hover:bg-indigo-800 
+            transition-colors delay-75 active:bg-indigo-900"
+          >
+          Оплатить 
+          11 200₽
+          </button>
+        </div>
+        <div class="flex flex-wrap w-full md:w-[40%] lg:w-[20%] bg-main-darker rounded-3xl">
+            <span class="w-full text-center bg-bluelike-light p-2 rounded-t-3xl">
+                8 сесий
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-extrabold">
+                2 750₽
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-light">
+                за сессию
+            </span>
+            <button
+            class="flex w-full justify-center items-center text-sm md:text-md lg:text-xl 
+            bg-violet text-white rounded-3xl p-1 lg:p-2 
+            mt-4 md:mt-6 lg:mt-10 hover:bg-indigo-800 
+            transition-colors delay-75 active:bg-indigo-900"
+          >
+          Оплатить 
+          22 000₽
+          </button>
+        </div>
+        <div class="flex flex-wrap w-full md:w-[40%] lg:w-[20%] bg-main-darker rounded-3xl">
+            <span class="w-full text-center bg-bluelike-light p-2 rounded-t-3xl">
+                16 сесий
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-extrabold">
+                2 690₽
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-light">
+                за сессию
+            </span>
+            <button
+            class="flex w-full justify-center items-center text-sm md:text-md lg:text-xl 
+            bg-violet text-white rounded-3xl p-1 lg:p-2 
+            mt-4 md:mt-6 lg:mt-10 hover:bg-indigo-800 
+            transition-colors delay-75 active:bg-indigo-900"
+          >
+          Оплатить 
+          43 040₽
+          </button>
+        </div>
+        <div class="flex flex-wrap w-full md:w-[40%] lg:w-[20%] bg-main-darker rounded-3xl">
+            <span class="w-full text-center bg-bluelike-light p-2 rounded-t-3xl">
+                32 сесии
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-extrabold">
+                2 550₽
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-light">
+                за сессию
+            </span>
+            <button
+            class="flex w-full justify-center items-center text-sm md:text-md lg:text-xl 
+            bg-violet text-white rounded-3xl p-1 lg:p-2 
+            mt-4 md:mt-6 lg:mt-10 hover:bg-indigo-800 
+            transition-colors delay-75 active:bg-indigo-900"
+          >
+          Оплатить 
+          81 600₽
+          </button>
+        </div>
+        <div class="flex flex-wrap w-full md:w-[40%] lg:w-[20%] bg-main-darker rounded-3xl">
+            <span class="w-full text-center bg-bluelike-light p-2 rounded-t-3xl">
+                64 сесии
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-extrabold">
+                2 490₽
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-light">
+                за сессию
+            </span>
+            <button
+            class="flex w-full justify-center items-center text-sm md:text-md lg:text-xl 
+            bg-violet text-white rounded-3xl p-1 lg:p-2 
+            mt-4 md:mt-6 lg:mt-10 hover:bg-indigo-800 
+            transition-colors delay-75 active:bg-indigo-900"
+          >
+          Оплатить 
+          159 360₽
+          </button>
+        </div>
+        <div class="flex flex-wrap w-full md:w-[40%] lg:w-[20%] bg-main-darker rounded-3xl">
+            <span class="w-full text-center bg-bluelike-light p-2 rounded-t-3xl">
+                96 сесий
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-extrabold">
+                2 320₽
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-light">
+                за сессию
+            </span>
+            <button
+            class="flex w-full justify-center items-center text-sm md:text-md lg:text-xl 
+            bg-violet text-white rounded-3xl p-1 lg:p-2 
+            mt-4 md:mt-6 lg:mt-10 hover:bg-indigo-800 
+            transition-colors delay-75 active:bg-indigo-900"
+          >
+          Оплатить 
+          222 720₽
+          </button>
+        </div>
+        <div class="flex flex-wrap w-full md:w-[40%] lg:w-[20%] bg-main-darker rounded-3xl">
+            <span class="w-full text-center bg-bluelike-light p-2 rounded-t-3xl">
+                128 сесий
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-extrabold">
+                2 200₽
+            </span>
+            <span class="w-full text-center mt-8 text-sm 
+            md:text-md lg:text-xl text-violet font-light">
+                за сессию
+            </span>
+            <button
+            class="flex w-full justify-center items-center text-sm md:text-md lg:text-xl 
+            bg-violet text-white rounded-3xl p-1 lg:p-2 
+            mt-4 md:mt-6 lg:mt-10 hover:bg-indigo-800 
+            transition-colors delay-75 active:bg-indigo-900"
+          >
+          Оплатить 
+          281 600₽
+          </button>
+        </div>
+        <form action="#" class="flex flex-wrap">
+            <input type="password" class="w-full p-2 border-2 rounded-2xl" placeholder="Введите промокод" name="promo" id="promo" />
+            <input type="button" class="w-full text-white bg-violet mt-4 p-2 rounded-3xl 
+            drop-shadow-[10px_10px_0px_rgba(205,225,255,1)]" value="Отправить" />
+        </form>
+    </section>
+    <section
+    class="relative w-full min-h-[600px] flex justify-start lg:justify-center flex-wrap bg-main-darker"
+  >
+    <article class="w-[60%] mt-16 ml-8 flex flex-wrap">
+      <span class="w-full text-sm md:text-xl lg:text-3xl font-extrabold text-violet">
+        YouMi заботиться о вас даже вне сессий
+      </span>
+      <span class="w-full text-xs lg:text-md mt-4 font-light">
+        Работая с YouMi от 4 сессий мы дарим доступ
+        к приложению с виртуальным психологом.
+      </span>
+      <span class="w-full flex flex-row gap-4 mt-8 items-center">
+        <img src="../resources/imgs/checked.svg" alt="Упсики(((" />
+        <span class="text-xs lg:text-md font-light">
+          Прорабатывайте себя с помощью
+          упражнений и аудиопрактик
+        </span>
+      </span>
+      <span class="w-full flex flex-row gap-4 mt-8 items-center">
+        <img src="../resources/imgs/checked.svg" alt="Упсики(((" />
+        <span class="text-xs lg:text-md font-light">
+          Ведите личный дневник настроения
+          и получайте подробную статистику о себе
+        </span>
+      </span>
+      <span class="w-full flex flex-row gap-4 mt-8 items-center">
+        <img src="../resources/imgs/checked.svg" alt="Упсики(((" />
+        <span class="text-xs lg:text-md font-light">
+          Расскажите виртуальному психологу о своих
+          чувствах и он подберет актуальный материал
+        </span>
+      </span>
+    </article>
+    <div class="flex flex-row justify-center relative ml-0 md:mr-auto md:ml-auto mt-8">
+      <img src="../resources/imgs/screen2.svg" class="relative left-[20%]" alt="Упс(" />
+      <img
+        src="../resources/imgs/screen1.svg"
+        class="relative left-[-100px] top-[40px]"
+        alt="Упс("
+      />
+    </div>
+    <div class="flex w-full justify-center">
+      <button
+        class="flex w-1/2 h-[60px] mt-[100px] justify-center items-center drop-shadow-[10px_10px_0px_rgba(205,225,255,1)] text-sm md:text-md lg:text-xl bg-violet text-white rounded-3xl hover:bg-indigo-800 transition-colors delay-75 active:bg-indigo-900"
+      >
+        Доступно в App Store
+      </button>
+    </div>
+  </section>
+    <footer
+    class="w-full flex flex-col gap-3 lg:flex-row bg-main-darker p-16 justify-evenly items-center"
+    >
+    <div class="flex flex-wrap">
+        <a href="./main.html" class="w-full flex">
+        <img src="../resources/imgs/logo.svg" alt="Упс(" />
+        </a>
+        <div class="w-full flex flex-wrap mt-2 justify-start">
+        <a href="http://vk.com" class="w-[25%] h-[30px]">
+            <img src="../resources/imgs/vk.svg" alt="vk" />
+        </a>
+        <a href="http://telegram.org" class="w-[25%] h-[30px]">
+            <img src="../resources/imgs/telegram.svg" alt="telegram" />
+        </a>
+        <a href="http://dzen.ru" class="w-[25%] h-[30px]">
+            <img src="../resources/imgs/dzen.svg" alt="dzen" />
+        </a>
+        </div>
+    </div>
+    <div class="flex flex-wrap w-full mt-8 lg:mt-0 lg:w-1/4">
+        <span class="w-full font-light"> Сотрудничество: </span>
+        <br />
+        <a href="mailto:@youmiwork" class="text-violet">@youmiwork</a>
+        <br />
+        <span class="w-full font-light"> Поддержка клиентов: </span>
+        <br />
+        <a href="mailto:@youmi" class="text-violet">@youmi</a>
+    </div>
+    <nav class="flex w-full lg:w-1/4 justify-center flex-wrap text-violet">
+        <a href="./about us.html" class="w-full"> О нас </a>
+        <a href="./tarrifs.html" class="w-full"> Тарифы </a>
+        <a href="./psychologists.html" class="w-full"> Психологам </a>
+    </nav>
+    <nav class="flex w-full lg:w-1/4 justify-center flex-wrap text-violet">
+        <a href="./blog.html" class="w-full"> Блог </a>
+        <a href="./QA.html" class="w-full"> Вопрос - ответ </a>
+        <a href="./contacts.html" class="w-full"> Контакты </a>
+    </nav>
+    <nav class="flex flex-wrap underline text-[#4d4d52] opacity-50">
+        <a href="./blog.html" class="w-full">
+        Обработка персональных данных
+        </a>
+        <a href="./QA.html" class="w-full">
+        Пользовательское соглашение
+        </a>
+        <a href="./contacts.html" class="w-full">
+        Юридические документы
+        </a>
+    </nav>
+    </footer>
+    <script src="../scripts/links.js"></script>
+    </body>
+</html>

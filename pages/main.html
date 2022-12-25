@@ -9,6 +9,13 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <body>
+    <div class="hidden bg-black absolute w-full z-50 bg-opacity-50 h-full" id="hiddenLog">
+      <form action="#" class="flex flex-wrap justify-center lg:left-1/4 absolute top-8 bg-white rounded-3xl p-16">
+          <input type="text" class="border-2 rounded-3xl p-4 w-full" required placeholder="имя"/>
+          <input type="password" class="border-2 rounded-3xl p-4 mt-8 w-full" required placeholder="Пароль" name="password" id="password" />
+          <input type="submit" class="mt-4 bg-violet text-white p-4 rounded-3xl" value="Войти" />
+      </form>
+  </div>
     <header
       class="flex flex-wrap w-full bg-main-darker relative min-h-[128px] items-start"
     >
@@ -24,12 +31,13 @@
           class="hidden mt-8 flex ml-auto md:flex md:gap-4 md:mr-0 md:text-4 lg:gap-12 lg:mr-8 lg:flex lg:text-lg"
         >
           <button id="aboutUs">О нас</button>
-          <button>Тарифы</button>
+          <button id="rates">Тарифы</button>
           <button id="psychologists">Психологам</button>
           <button>Материалы</button>
           <button
             class="border-2 border-violet rounded-3xl p-4 transition-colors delay-75 text-violet hover:bg-violet hover:text-white active:bg-indigo-800 active:border-indigo-800"
-          >
+            id="personalAccount"
+            >
             Личный кабинет
           </button>
         </div>
@@ -42,14 +50,17 @@
       <a href="./about us.html" class="w-full">
           <button class="w-full border-2 rounded-3xl" id="aboutUs">О нас</button>
       </a>
-      <button class="w-full border-2 rounded-3xl">Тарифы</button>
+      <a href="./rates.html" class="w-full">
+        <button class="w-full border-2 rounded-3xl" id="psychologists">Тарифы</button>
+      </a>
       <a href="./psychologists.html" class="w-full">
           <button class="w-full border-2 rounded-3xl" id="psychologists">Психологам</button>
       </a>
       <button class="w-full border-2 rounded-3xl">Материалы</button>
       <button
         class="border-2 w-full border-violet rounded-3xl p-1 transition-colors delay-75 text-violet hover:bg-violet hover:text-white active:bg-indigo-800 active:border-indigo-800"
-      >
+        onclick="personalAccount()"
+        >
         Личный кабинет
       </button>
     </nav>
@@ -113,11 +124,11 @@
     <section
       class="w-full flex items-start justify-between flex-wrap min-h-[300px] p-4 md:p-16"
     >
-      <div
+      <h1
         class="w-full flex text-violet text-xl md:text-3xl lg:text-4xl justify-center"
       >
         Онлайн-психотерапия становится комфортнее
-      </div>
+      </h1>
       <div
         class="w-full flex items-start gap-5 justify-between flex-wrap sm:p-8 lg:p-32 mt-32"
       >
@@ -539,14 +550,12 @@
         </span>
         <span class="w-full text-xs lg:text-md mt-4 font-light">
           Работая с YouMi от 4 сессий мы дарим доступ
-          <br />
           к приложению с виртуальным психологом.
         </span>
         <span class="w-full flex flex-row gap-4 mt-8 items-center">
           <img src="../resources/imgs/checked.svg" alt="Упсики(((" />
           <span class="text-xs lg:text-md font-light">
             Прорабатывайте себя с помощью
-            <br />
             упражнений и аудиопрактик
           </span>
         </span>
@@ -554,7 +563,6 @@
           <img src="../resources/imgs/checked.svg" alt="Упсики(((" />
           <span class="text-xs lg:text-md font-light">
             Ведите личный дневник настроения
-            <br />
             и получайте подробную статистику о себе
           </span>
         </span>
@@ -562,7 +570,6 @@
           <img src="../resources/imgs/checked.svg" alt="Упсики(((" />
           <span class="text-xs lg:text-md font-light">
             Расскажите виртуальному психологу о своих
-            <br />
             чувствах и он подберет актуальный материал
           </span>
         </span>
@@ -592,9 +599,7 @@
         <span class="w-full text-sm font-light mt-8">
           Если вам необходима срочная
           <span class="font-semibold">психологическая помощь</span>
-          <br>
-          и&nbsp;вы&nbsp;чувствуете, что не&nbsp;можете больше справиться самостоятельно,
-          <br>
+          и&nbsp; вы&nbsp;чувствуете, что не&nbsp;можете больше справиться самостоятельно,
           обратитесь по&nbsp;одному из&nbsp;контактов ниже.
         </span>
         <div class="w-full md:w-1/2 mt-8">
@@ -602,7 +607,6 @@
           <br>
           <span class="font-light">
             Центр экстренной психологической
-            <br>
             помощи МЧС России
           </span>
         </div>
@@ -611,7 +615,6 @@
           <br>
           <span class="font-light">
             Московская служба психологической
-            <br>
             помощи населению
           </span>
         </div>
@@ -625,9 +628,7 @@
           <br>
           <span class="font-light">
             Всероссийский телефон доверия для
-            <br>
             женщин, пострадавших от домашнего
-            <br>
             насилия
           </span>
         </div>
@@ -636,7 +637,6 @@
           <br>
           <span class="font-light">
             Всероссийская служба детского
-            <br>
             телефона доверия
           </span>
         </div>
@@ -672,7 +672,7 @@
       </div>
       <nav class="flex w-full lg:w-1/4 justify-center flex-wrap text-violet">
         <a href="./about us.html" class="w-full"> О нас </a>
-        <a href="./tarrifs.html" class="w-full"> Тарифы </a>
+        <a href="./rates.html" class="w-full"> Тарифы </a>
         <a href="./psychologists.html" class="w-full"> Психологам </a>
       </nav>
       <nav class="flex w-full lg:w-1/4 justify-center flex-wrap text-violet">

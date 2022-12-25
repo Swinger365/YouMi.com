@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <div class="hidden bg-black absolute w-full z-50 bg-opacity-50 h-full" id="hiddenLog">
+        <form action="#" class="flex flex-wrap justify-center lg:left-1/4 absolute top-8 bg-white rounded-3xl p-16">
+            <input type="text" class="border-2 rounded-3xl p-4 w-full" required placeholder="имя"/>
+            <input type="password" class="border-2 rounded-3xl p-4 mt-8 w-full" required placeholder="Пароль" name="password" id="password" />
+            <input type="submit" class="mt-4 bg-violet text-white p-4 rounded-3xl" value="Войти" />
+        </form>
+    </div>
     <header
       class="flex flex-wrap w-full relative min-h-[128px] items-start"
     >
@@ -23,12 +30,13 @@
           class="hidden mt-8 flex ml-auto md:flex md:gap-4 md:mr-0 md:text-4 lg:gap-12 lg:mr-8 lg:flex lg:text-lg"
         >
           <button id="aboutUs">О нас</button>
-          <button>Тарифы</button>
+          <button id="rates">Тарифы</button>
           <button id="psychologists">Психологам</button>
           <button>Материалы</button>
           <button
             class="border-2 border-violet rounded-3xl p-4 transition-colors delay-75 text-violet hover:bg-violet hover:text-white active:bg-indigo-800 active:border-indigo-800"
-          >
+            id="personalAccount"
+            >
             Личный кабинет
           </button>
         </div>
@@ -41,14 +49,17 @@
         <a href="./about us.html" class="w-full">
             <button class="w-full border-2 rounded-3xl" id="aboutUs">О нас</button>
         </a>
-        <button class="w-full border-2 rounded-3xl">Тарифы</button>
+        <a href="./rates.html" class="w-full">
+            <button class="w-full border-2 rounded-3xl" id="psychologists">Тарифы</button>
+        </a>
         <a href="./psychologists.html" class="w-full">
             <button class="w-full border-2 rounded-3xl" id="psychologists">Психологам</button>
         </a>
         <button class="w-full border-2 rounded-3xl">Материалы</button>
         <button
           class="border-2 w-full border-violet rounded-3xl p-1 transition-colors delay-75 text-violet hover:bg-violet hover:text-white active:bg-indigo-800 active:border-indigo-800"
-        >
+          onclick="personalAccount()"
+          >
           Личный кабинет
         </button>
     </nav>
