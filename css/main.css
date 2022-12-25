@@ -635,6 +635,26 @@ body{
   left: 25%;
 }
 
+.left-\[15\%\] {
+  left: 15%;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.left-\[10\%\] {
+  left: 10%;
+}
+
+.left-\[5\%\] {
+  left: 5%;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -1368,6 +1388,14 @@ body{
 
   .lg\:left-1\/4 {
     left: 25%;
+  }
+
+  .lg\:left-\[13\%\] {
+    left: 13%;
+  }
+
+  .lg\:left-\[80\%\] {
+    left: 80%;
   }
 
   .lg\:order-1 {
