@@ -1195,6 +1195,14 @@ body{
     margin-left: 0.5rem;
   }
 
+  .md\:mr-auto {
+    margin-right: auto;
+  }
+
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+
   .md\:block {
     display: block;
   }
