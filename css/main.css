@@ -1082,6 +1082,10 @@ body{
   padding: 5rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1427,6 +1431,10 @@ body{
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-2\/3 {

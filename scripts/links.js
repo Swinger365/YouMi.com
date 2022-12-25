@@ -2,6 +2,10 @@ const aboutUs = document.querySelector("#aboutUs");
 const chat = document.querySelector("#chat");
 const burger = document.querySelector("#burger");
 const psychologists = document.querySelector("#psychologists");
+const hidden = document.querySelector("#hidden-menu");
+burger.addEventListener("click",(evt)=>{
+    hidden.classList.toggle("hidden");
+});
 aboutUs.addEventListener("click",(evt)=>{
     window.location.href = "../pages/about us.html"
 });
