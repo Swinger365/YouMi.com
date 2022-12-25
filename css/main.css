@@ -1485,6 +1485,10 @@ body{
     padding: 5rem;
   }
 
+  .lg\:text-left {
+    text-align: left;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
